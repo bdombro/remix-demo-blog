@@ -1,0 +1,21 @@
+[data-pagefooter] {
+	--header-height: 2.5rem;
+	background: #333;
+}
+
+[data-pagefooter] ul {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+}
+
+[data-pagefooter] a {
+	--height: var(--header-height);
+	display: inline-block;
+	line-height: var(--height);
+	height: var(--height);
+	color: var(--color-text);
+}
+[data-pagefooter] a:hover {
+	background-color: #555;
+}

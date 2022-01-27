@@ -1,0 +1,24 @@
+[data-pageheader] {
+	--header-height: 2.5rem;
+	background: #333;
+}
+
+[data-pageheader] ul {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	display: flex;
+}
+
+[data-pageheader] a {
+	--height: var(--header-height);
+	display: inline-block;
+	line-height: var(--height);
+	height: var(--height);
+	padding: 0 1rem;
+	color: var(--color-text);
+	text-transform: uppercase;
+}
+[data-pageheader] a:hover {
+	background-color: #555;
+}

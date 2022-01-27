@@ -4,6 +4,7 @@ specifiers:
   '@remix-run/dev': ^1.1.3
   '@remix-run/react': ^1.1.3
   '@remix-run/serve': ^1.1.3
+  '@remix-run/vercel': ^1.1.3
   '@types/react': ^17.0.24
   '@types/react-dom': ^17.0.9
   react: ^17.0.2
@@ -14,6 +15,7 @@ specifiers:
 dependencies:
   '@remix-run/react': 1.1.3_react-dom@17.0.2+react@17.0.2
   '@remix-run/serve': 1.1.3_react-dom@17.0.2+react@17.0.2
+  '@remix-run/vercel': 1.1.3_react-dom@17.0.2+react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   remix: 1.1.3
@@ -173,6 +175,19 @@ packages:
       source-map: 0.7.3
     dev: false
 
+  /@remix-run/vercel/1.1.3_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-nOtO0FjneLwINrLqow3fwLibb97gpwkK0QgxPtabm3qzJ/JRsEwt/7IDNBicA8u8GnNyr9476yedYlT90nT5/Q==}
+    peerDependencies:
+      '@vercel/node': ^1.8.3
+    dependencies:
+      '@remix-run/node': 1.1.3_react-dom@17.0.2+react@17.0.2
+      '@remix-run/server-runtime': 1.1.3_react-dom@17.0.2+react@17.0.2
+    transitivePeerDependencies:
+      - encoding
+      - react
+      - react-dom
+    dev: false
+
   /@rollup/pluginutils/4.1.2:
     resolution: {integrity: sha512-ROn4qvkxP9SyPeHaf7uQC/GPFY6L/OWy9+bd9AwcjOAWQwxRscoEyAUD8qCY5o5iL4jqQwoLk2kaTKJPb/HwzQ==}
     engines: {node: '>= 8.0.0'}
@@ -202,7 +217,7 @@ packages:
   /@types/busboy/0.3.2:
     resolution: {integrity: sha512-iEvdm9Z9KdSs/ozuh1Z7ZsXrOl8F4M/CLMXPZHr3QuJ4d6Bjn+HBMC5EMKpwpAo8oi8iK9GZfFoHaIMrrZgwVw==}
     dependencies:
-      '@types/node': 17.0.12
+      '@types/node': 17.0.13
     dev: false
 
   /@types/cacheable-request/6.0.2:
@@ -210,7 +225,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.3
-      '@types/node': 17.0.12
+      '@types/node': 17.0.13
       '@types/responselike': 1.0.0
     dev: true
 
@@ -251,7 +266,7 @@ packages:
   /@types/keyv/3.1.3:
     resolution: {integrity: sha512-FXCJgyyN3ivVgRoml4h94G/p3kY+u/B86La+QptcqJaWtBWtmc6TtkNfS40n9bIvyLteHh7zXOtgbobORKPbDg==}
     dependencies:
-      '@types/node': 17.0.12
+      '@types/node': 17.0.13
     dev: true
 
   /@types/mdast/3.0.10:
@@ -275,12 +290,12 @@ packages:
   /@types/node-fetch/2.5.12:
     resolution: {integrity: sha512-MKgC4dlq4kKNa/mYrwpKfzQMB5X3ee5U6fSprkKpToBqBmX4nFZL9cW5jl6sWn+xpRJ7ypWh2yyqqr8UUCstSw==}
     dependencies:
-      '@types/node': 17.0.12
+      '@types/node': 17.0.13
       form-data: 3.0.1
     dev: false
 
-  /@types/node/17.0.12:
-    resolution: {integrity: sha512-4YpbAsnJXWYK/fpTVFlMIcUIho2AYCi4wg5aNPrG1ng7fn/1/RZfCIpRCiBX+12RVa34RluilnvCqD+g3KiSiA==}
+  /@types/node/17.0.13:
+    resolution: {integrity: sha512-Y86MAxASe25hNzlDbsviXl8jQHb0RDvKt4c40ZJQ1Don0AAL0STLZSs4N+6gLEO55pedy7r2cLwS+ZDxPm/2Bw==}
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -307,7 +322,7 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 17.0.12
+      '@types/node': 17.0.13
     dev: true
 
   /@types/scheduler/0.16.2:
