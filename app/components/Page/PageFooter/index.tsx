@@ -14,6 +14,6 @@ export function PageFooter() {
 	);
 }
 
-PageFooter.links = [
+PageFooter.links = () => [
 	{ rel: "stylesheet", href: require('./index.css') }
 ];

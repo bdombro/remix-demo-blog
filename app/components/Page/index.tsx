@@ -21,8 +21,8 @@ Page.NotFound = () => (
   </Page>
 );
 
-Page.links = [
-  ...PageHeader.links,
-  ...PageFooter.links,
+Page.links = () => [
+  ...PageHeader.links(),
+  ...PageFooter.links(),
   { rel: "stylesheet", href: styles }
 ]

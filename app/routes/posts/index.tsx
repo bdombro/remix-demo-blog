@@ -27,5 +27,5 @@ export async function loader() {
 }
 
 export const links = () =>[
-  ...Page.links,
+  ...Page.links(),
 ]

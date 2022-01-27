@@ -17,6 +17,6 @@ export function PageHeader() {
 	);
 }
 
-PageHeader.links = [
+PageHeader.links = () => [
 	{ rel: "stylesheet", href: require('./index.css') }
 ];

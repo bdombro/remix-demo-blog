@@ -22,6 +22,6 @@ export async function loader({ params }: { params: { slug: string } }) {
 }
 
 export const links = () =>[
-  ...Page.links,
+  ...Page.links(),
 ]
 
